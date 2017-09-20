@@ -9,8 +9,11 @@ import { Provider } from 'react-redux';
 import routes from './routes';
 import './styles/styles.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-
+import {loadCourses} from './actions/courseAction';
 const store = configureStore();
+debugger;
+store.dispatch(loadCourses());
+
 render(
     <Provider store={store}>
         <Router history={browserHistory} routes={routes} />
