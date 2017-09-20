@@ -3,6 +3,7 @@ import webpack from 'webpack';
 import path from 'path';
 import config from '../webpack.config.dev';
 import open from 'open';
+import colors from 'colors';
 
 /* eslint-disable no-console */
 
@@ -20,7 +21,7 @@ app.use(require('webpack-hot-middleware')(compiler));
 app.get('*', function(req, res) {
   res.sendFile(path.join( __dirname, '../src/index.html'));
 });
-console.log("RAPP:now starting");
+console.log("RAPP:now starting".blue);
 app.listen(port, function(err) {
   if (err) {
     console.log("RAPP:port already open");
