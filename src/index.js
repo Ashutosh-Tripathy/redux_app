@@ -11,7 +11,6 @@ import './styles/styles.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import {loadCourses} from './actions/courseAction';
 const store = configureStore();
-debugger;
 store.dispatch(loadCourses());
 
 render(
