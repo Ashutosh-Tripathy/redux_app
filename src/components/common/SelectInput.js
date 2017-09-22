@@ -25,7 +25,6 @@ SelectInput.propTypes = {
     defaultOption: PropTypes.string,
     value: PropTypes.string,
     error: PropTypes.string,
-    option: PropTypes.arrayOf
-
+    options: PropTypes.array.isRequired
 };
 export default SelectInput;
